@@ -42,7 +42,7 @@ app.listen(3000);
 The pattern is an object with the following properties.
 
  - __case__ (mandatory) a lookup table of middlewares.
- - __default__ (optinal) the default route to follow if none of the cases matches.
+ - __default__ (optional) the default route to follow if none of the cases matches.
 
 ### Installation
 
