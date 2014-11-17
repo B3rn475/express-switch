@@ -9,8 +9,8 @@ __express-switch__ is a pattern matching middleware for __express__
 eSwitch(getValue, pattern)
 ```
 
- - __getValue__ (mandatory) a synchronous function that return the value to match
- - __patter__ an object that describes the different routes to follow depending on the value return by __getValue__
+ - __getValue__ (mandatory) a synchronous function that returns the value to match
+ - __patter__ (mandatory) an object that describes the different routes to follow depending on the value return by __getValue__
 
 ```js
 var express = require('express');
@@ -36,6 +36,13 @@ app.use(eSwitch(
 
 app.listen(3000);
 ```
+
+### Pattern
+
+The pattern is an object with the following properties.
+
+ - __case__ (mandatory) a lookup table of middlewares.
+ - __default__ (optinal) the default route to follow if none of the cases matches.
 
 ### Installation
 
