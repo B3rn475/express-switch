@@ -1,0 +1,24 @@
+{
+    "name": "express-switch",
+    "version": "0.0.1",
+    "description": "",
+    "keywords": ["express", "switch", "pattern matching"],
+    "homepage": "https://github.com/B3rn475/express-switch",
+    "author": {
+        "name": "Carlo BERNASCHINA",
+        "url": "http://www.bernaschina.com/"
+    },
+    "licenses": {
+        "type": "MIT",
+        "url": "http://github.com/B3rn475/express-switch/raw/master/LICENSE"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/B3rn475/express-switch.git"
+    },
+    "dependencies": {},
+    "engines": {
+        "node": ">=0.8.0"
+    },
+    "main": "index.js"
+}
