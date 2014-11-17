@@ -10,7 +10,7 @@ eSwitch(getValue, pattern)
 ```
 
  - __getValue__ (mandatory) a synchronous function that returns the value to match
- - __patter__ (mandatory) an object that describes the different routes to follow depending on the value return by __getValue__
+ - __patter__ (mandatory) an object that describes the different routes to follow depending on the value returned by __getValue__
 
 ```js
 var express = require('express');
