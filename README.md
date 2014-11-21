@@ -9,7 +9,7 @@ __express-switch__ is a pattern matching middleware for __express__
 eSwitch(getValue, pattern)
 ```
 
- - __getValue__ (mandatory) a synchronous function that returns the value to match
+ - __getValue__ (mandatory) a function that returns the value to match
  - __pattern__ (mandatory) an object that describes the different routes to follow depending on the value returned by __getValue__
 
 __Synchronous__
