@@ -10,7 +10,9 @@ eSwitch(getValue, pattern)
 ```
 
  - __getValue__ (mandatory) a synchronous function that returns the value to match
- - __patter__ (mandatory) an object that describes the different routes to follow depending on the value returned by __getValue__
+ - __pattern__ (mandatory) an object that describes the different routes to follow depending on the value returned by __getValue__
+
+__Synchronous__
 
 ```js
 var express = require('express');
@@ -22,6 +24,38 @@ var app = express();
 app.use(eSwitch(
     function(req, res){
         return req.user.role;
+    },
+    {
+        case: {
+            ADMIN: middleware1,
+            REGISTERED: [middleware2, middleware3]
+        },
+        default: middleware5
+    }
+));
+
+...
+
+app.listen(3000);
+```
+
+__Asynchronous__
+
+```js
+var express = require('express');
+var eSwitch = require('express-switch');
+var app = express();
+
+...
+
+app.use(eSwitch(
+    function(req, res, done){
+        something.doAsync(req, res, function(err, value){
+            if (err){
+                return done(undefined, err);
+            }
+            done(value);
+        });
     },
     {
         case: {
