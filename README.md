@@ -6,7 +6,7 @@ __express-switch__ is a pattern matching middleware for __express__
 ### Installation
 
 ```bash
-$ npm install express
+$ npm install express-switch
 ```
 
 ### Parameters
