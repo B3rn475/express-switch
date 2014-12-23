@@ -1,6 +1,6 @@
 {
     "name": "express-switch",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "",
     "keywords": ["express", "switch", "pattern matching"],
     "homepage": "https://github.com/B3rn475/express-switch",
