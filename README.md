@@ -1,6 +1,7 @@
 express-switch
 ===
 
+  [![NPM Version][npm-image]][npm-url]
 
 __express-switch__ is a pattern matching middleware for __express__
 
@@ -138,3 +139,6 @@ __prototye__
         default : middleware // optional
     }
 ```
+
+[npm-image]: https://img.shields.io/npm/v/express-switch.svg?style=flat
+[npm-url]: https://npmjs.org/package/express-switch
