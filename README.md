@@ -31,7 +31,7 @@ This function can be __synchronous__ or __asynchronous__.
 The __getter__ is __synchronous__ when the number of parameters is less than 3.
 It has to return the value.
 
-__prototye__
+__prototype__
 
 ```js
     function (req, res) { /* ... */ return value; }
@@ -68,7 +68,7 @@ app.listen(3000);
 The __getter__ is __asynchronous__ when the number of parameters is more than 2.
 It has to forward the value to the __done__ callback.
 
-__prototye__
+__prototype__
 
 ```js
     function (req, res, done) {
