@@ -1,5 +1,5 @@
 express-switch
-===
+---
 
   [![NPM Version][npm-image]][npm-url]
 
