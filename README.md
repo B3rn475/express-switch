@@ -2,6 +2,8 @@ express-switch
 ---
 
   [![NPM Version][npm-image]][npm-url]
+  [![Build Status][travis-image]][travis-url]
+  [![Coverage Status][coveralls-image]][coveralls-url]
 
 __express-switch__ is a pattern matching middleware for __express__
 
@@ -142,3 +144,7 @@ __prototye__
 
 [npm-image]: https://img.shields.io/npm/v/express-switch.svg?style=flat
 [npm-url]: https://npmjs.org/package/express-switch
+[travis-image]: https://travis-ci.org/B3rn475/express-switch.svg
+[travis-url]: https://travis-ci.org/B3rn475/express-switch
+[coveralls-image]: https://coveralls.io/repos/B3rn475/express-switch/badge.svg
+[coveralls-url]: https://coveralls.io/r/B3rn475/express-switch
