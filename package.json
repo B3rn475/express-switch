@@ -17,8 +17,19 @@
         "url": "http://github.com/B3rn475/express-switch.git"
     },
     "dependencies": {},
+    "devDependencies": {
+        "async": "^0.9.0",
+        "mocha": "latest",
+        "istanbul": "latest",
+        "coveralls": "latest"
+	},
     "engines": {
         "node": ">=0.8.0"
+    },
+    "scripts": {
+        "test": "mocha",
+        "coverage": "istanbul cover node_modules/mocha/bin/_mocha",
+        "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
     },
     "main": "index.js"
 }
