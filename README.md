@@ -118,7 +118,7 @@ app.listen(3000);
 ```
 
 ### Return an Array
-If the __getter__ returns/forwards and __Array__ all the values will be analized sequencially, unless one of the middlewares forwards an error.
+If the __getter__ returns/forwards an __Array__ all the values will be analized sequencially, unless one of the middlewares forwards an error.
 
 Pattern
 ---
