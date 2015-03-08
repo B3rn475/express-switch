@@ -1,7 +1,7 @@
 {
     "name": "express-switch",
     "version": "0.1.0",
-    "description": "",
+    "description": "A pattern matching middleware for express",
     "keywords": ["express", "switch", "pattern matching"],
     "homepage": "https://github.com/B3rn475/express-switch",
     "author": {
