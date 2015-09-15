@@ -134,7 +134,7 @@ __prototye__
     var pattern = {
         case : {
             "value 1" : middleware1,
-            "value 2" : [middleware2, middleware 3],
+            "value 2" : [middleware2, middleware3],
             // ...
             "value N" : middleware
         },
