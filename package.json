@@ -1,6 +1,6 @@
 {
     "name": "express-switch",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "A pattern matching middleware for express",
     "keywords": ["express", "switch", "pattern matching"],
     "homepage": "https://github.com/B3rn475/express-switch",
@@ -8,6 +8,7 @@
         "name": "Carlo BERNASCHINA",
         "url": "http://www.bernaschina.com/"
     },
+    "license": "MIT",
     "licenses": {
         "type": "MIT",
         "url": "http://github.com/B3rn475/express-switch/raw/master/LICENSE"
