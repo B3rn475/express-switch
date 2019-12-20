@@ -2,7 +2,11 @@
     "name": "express-switch",
     "version": "0.1.2",
     "description": "A pattern matching middleware for express",
-    "keywords": ["express", "switch", "pattern matching"],
+    "keywords": [
+        "express",
+        "switch",
+        "pattern matching"
+    ],
     "homepage": "https://github.com/B3rn475/express-switch",
     "author": {
         "name": "Carlo BERNASCHINA",
@@ -20,17 +24,17 @@
     "dependencies": {},
     "devDependencies": {
         "async": "^0.9.0",
-        "mocha": "latest",
-        "istanbul": "latest",
-        "coveralls": "latest"
-	},
+        "coveralls": "^3.0.9",
+        "mocha": "^6.2.2",
+        "nyc": "^14.1.1"
+    },
     "engines": {
         "node": ">=0.8.0"
     },
     "scripts": {
-        "test": "mocha",
-        "coverage": "istanbul cover node_modules/mocha/bin/_mocha",
-        "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
+        "test": "mocha --recursive",
+        "coverage": "nyc npm test",
+        "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
     },
     "main": "index.js"
 }
